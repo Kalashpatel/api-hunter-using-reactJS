@@ -1,16 +1,54 @@
-# React + Vite
+# 📡 API Hunter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic React.js application built with **Vite** that allows users to explore, search, and filter data from a public REST API. This project demonstrates modern React patterns, including hooks, asynchronous data fetching, and responsive UI design.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+[Image of React component architecture diagram]
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## 🎯 Project Overview
+The goal of this project is to create a clean, user-friendly interface that handles real-world data. It features a responsive 4-column grid layout, a live search bar, and robust error/loading states.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+- **Live API Integration**: Fetches real-time data from the [Fake Store API](https://fakestoreapi.com/).
+- **Dynamic 4-Column Grid**: Optimized layout that displays 4 products per row on desktop and scales down for mobile.
+- **Instant Search**: Filter through the product list in real-time.
+- **State Management**: Uses `useState` and `useEffect` for clean data flow.
+- **Error Handling**: Gracefully handles API failures and "No Results Found" states.
+
+## 🛠 Tech Stack
+- **React.js** (Functional Components)
+- **Vite** (Build Tool)
+- **Axios** (API Requests)
+- **CSS3** (Grid & Flexbox)
+- **Lucide-React** (Icons)
+
+## 📁 Project Structure
+```text
+api-hunter/
+├── src/
+│   ├── components/
+│   │   ├── Search.jsx   # Search input logic
+│   │   ├── Card.jsx     # Individual product display
+│   │   └── Loader.jsx   # Loading animation
+│   ├── App.jsx          # Main logic and data fetching
+│   ├── App.css          # Grid and responsive styling
+│   └── main.jsx         # Entry point
+├── .env                 # API Keys (if required)
+└── README.md
+
+## 📝 Learning Objectives Met
+
+Mastered the Fetch/Axios pattern within useEffect.
+
+Implemented Conditional Rendering for loading and error UI.
+
+Designed a Responsive CSS Grid for varying screen sizes.
+
+Organized project files using a professional folder structure.
+
+.
+
+## 📸 Screenshots
+![Desktop View](./public/screenshots/home.png)
